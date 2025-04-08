@@ -16,7 +16,7 @@ public class CreateFile {
             int key =7;
             String m = "I LOVE YOU";
             String m1 = "Gwapo ko";
-            String m2 = "Boutan kaayo ko";
+            String m2 = "Boutan si ma'am";
             String m3 = encryptMessage(m , key);
             String m4 = encryptMessage(m1 , key);
              String m5 = encryptMessage2(m2 , key);
