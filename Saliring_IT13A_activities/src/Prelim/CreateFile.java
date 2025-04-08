@@ -11,7 +11,7 @@ public class CreateFile {
             if(myFile.createNewFile()){
                 System.out.println("File created:" + myFile.getName());
             }else{
-                System.out.println("File already exist.");
+                System.out.println("File already exist");
             }
             int key =7;
             String m = "I LOVE YOU";
@@ -21,15 +21,11 @@ public class CreateFile {
             String m4 = encryptMessage(m1 , key);
              String m5 = encryptMessage2(m2 , key);
              FileWriter writer = new FileWriter(myFile);
-             writer.write("Original Message1:" + m + "\n");
-             writer.write("Encrypted Message1:" + m3 + "\n\n");
-              writer.write("Original Message2:" + m1 + "\n");
-             writer.write("Encrypted Message2:" + m4 + "\n\n");
-              writer.write("Original Message3:" + m2 + "\n");
-             writer.write("Encrypted Message3:" + m5 + "\n\n");
+             writer.write("Original Message! " + "\n" + m + "\n" + m1 + "\n" + m2);
+             
              writer.close();
              System.out.println("Successfully wrote to the file");
-             
+                System.out.println("EncryptedMessage: " + "\n" + m3 + "\n" + m4 + "\n" + m5);
         }catch (IOException e){
             System.out.println("An error occured.");
             e.printStackTrace();
